@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class HomeSceneController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    
+    public void LoadDifferences()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameFlowEvents.LoadScene.Invoke("Differences");
     }
 }
